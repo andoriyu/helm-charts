@@ -39,7 +39,7 @@ spec:
               {{ if .Values.sabnzbd.configPath }}
               value: {{ .Values.sabnzbd.configPath }}
               {{ else }}
-              value: "{{ .Values.sabnzbd.dataDir }}/config.ini"
+              value: "{{ .Values.sabnzbd.dataDir }}/sabnzbd.ini"
               {{ end }}
             - name: SABNZBD_UID
               value: {{ .Values.sabnzbd.uid }}
@@ -49,10 +49,15 @@ spec:
             - name: http
               containerPort: 8080
               protocol: TCP
+        volumeMounts:
+          - name: data
+            mountPath: {{ .Values.sabnzbd.dataDir }}
+          - name: media
+            mountPath: {{ .Values.sabnzbd.mediaDir }}
           livenessProbe:
             httpGet:
               {{ if .Values.sabnzbd.apiKey }}
-              path: "/sabnzbd/api?mode=version&apiley={{ .Values.sabnzbd.apiKey }}"
+              path: "/sabnzbd/api?mode=version&apikey={{ .Values.sabnzbd.apiKey }}"
               {{ else }}
               path: "/sabnzbd/api?mode=version"
               {{ end }}
@@ -60,7 +65,7 @@ spec:
           readinessProbe:
             httpGet:
               {{ if .Values.sabnzbd.apiKey }}
-              path: "/sabnzbd/api?mode=version&apiley={{ .Values.sabnzbd.apiKey }}"
+              path: "/sabnzbd/api?mode=version&apikey={{ .Values.sabnzbd.apiKey }}"
               {{ else }}
               path: "/sabnzbd/api?mode=version"
               {{ end }}
