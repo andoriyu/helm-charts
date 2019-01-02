@@ -3,7 +3,7 @@ entries:
   kube-plex:
   - apiVersion: v1
     appVersion: 1.10.1.4602-f54242b6b
-    created: 2019-01-01T19:47:44.263245825-08:00
+    created: 2019-01-01T19:53:12.216061679-08:00
     description: Plex Media Server
     digest: bac668d821243ecb5f7b73ff0596b73c17b993703ff397c8696ab2a105f1b7c9
     home: https://plex.tv/
@@ -22,9 +22,9 @@ entries:
   sabnzbd:
   - apiVersion: v1
     appVersion: 2.3.5
-    created: 2019-01-01T19:47:44.263464238-08:00
+    created: 2019-01-01T19:53:12.216319259-08:00
     description: A Helm chart to deploy SABnzbd into k8s
-    digest: 29cbcc3d1600ef0f0aa7cfc8c41918312c07a25db22d9d2d51d7b8fab8bc84b2
+    digest: 6ce2a5a2f6894df77a956e5035d097b1eded7e435da4aae79d8e7b0a1ff22b08
     icon: https://sabnzbd.org/images/logo-full.svg
     keywords:
     - seedbox
@@ -36,4 +36,4 @@ entries:
     urls:
     - sabnzbd-0.1.0.tgz
     version: 0.1.0
-generated: 2019-01-01T19:47:44.121291448-08:00
+generated: 2019-01-01T19:53:12.073176522-08:00

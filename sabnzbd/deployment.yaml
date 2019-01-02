@@ -22,11 +22,15 @@ spec:
       volumes:
         - name: data
           mountPath: {{ .Values.sabnzbd.dataDir }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.persistence.data.claimName }}
         {{- if .Values.persistence.data.subPath }}
           subPath: {{ .Values.persistence.data.subPath }}
         {{ end }}
         - name: media
           mountPath: {{ .Values.sabnzbd.mediaDir }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.persistence.media.claimName }}
         {{- if .Values.persistence.media.subPath }}
           subPath: {{ .Values.persistence.media.subPath }}
         {{ end }}
