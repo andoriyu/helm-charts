@@ -1,0 +1,12 @@
+apiVersion: v1
+appVersion: "2.3.5"
+description: A Helm chart to deploy SABnzbd into k8s
+name: sabnzbd
+version: 0.1.0
+keywords:
+  - seedbox
+  - newsgroup
+  - sabnzbd
+  - nzb
+  - usenet
+icon: https://sabnzbd.org/images/logo-full.svg

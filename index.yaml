@@ -1,0 +1,39 @@
+apiVersion: v1
+entries:
+  kube-plex:
+  - apiVersion: v1
+    appVersion: 1.10.1.4602-f54242b6b
+    created: 2019-01-01T19:04:06.731172009-08:00
+    description: Plex Media Server
+    digest: bac668d821243ecb5f7b73ff0596b73c17b993703ff397c8696ab2a105f1b7c9
+    home: https://plex.tv/
+    icon: https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png
+    keywords:
+    - plex
+    maintainers:
+    - name: munnerz
+    name: kube-plex
+    sources:
+    - https://github.com/andoriyu/kube-plex
+    - https://hub.docker.com/r/plexinc/pms-docker/
+    urls:
+    - kube-plex-0.2.1.tgz
+    version: 0.2.1
+  sabnzbd:
+  - apiVersion: v1
+    appVersion: 2.3.5
+    created: 2019-01-01T19:04:06.731396131-08:00
+    description: A Helm chart to deploy SABnzbd into k8s
+    digest: c9475a39f0990928d28a39fe11f05830eca19970dcc712bdc3dff5d97b46dce6
+    icon: https://sabnzbd.org/images/logo-full.svg
+    keywords:
+    - seedbox
+    - newsgroup
+    - sabnzbd
+    - nzb
+    - usenet
+    name: sabnzbd
+    urls:
+    - sabnzbd-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-01-01T19:04:06.578237069-08:00
