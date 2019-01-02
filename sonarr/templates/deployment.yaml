@@ -48,9 +48,9 @@ spec:
               value: {{ .Values.sonarr.uid | quote }}
           volumeMounts:
           - name: data
-            mountPath: /data
+            mountPath: {{ .Values.persistence.data.mountPath }}
           - name: media
-            mountPath: /media
+            mountPath: {{ .Values.persistence.media.mountPath }}
           ports:
             - name: http
               containerPort: 8989
