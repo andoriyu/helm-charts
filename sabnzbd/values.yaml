@@ -16,8 +16,8 @@ sabnzbd:
   # Directory for media (downloaded files)
   mediaDir: "/media"
   # UID to run daemon as
-  uid: "666"
-  gid: "666"
+  uid: 666
+  gid: 666
 persistence:
   data:
     # Specify claimName for data dir volume

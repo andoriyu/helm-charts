@@ -37,14 +37,14 @@ spec:
           env:
             - name: CONFIG
               {{ if .Values.sabnzbd.configPath }}
-              value: {{ .Values.sabnzbd.configPath }}
+              value: {{ .Values.sabnzbd.configPath | quote }}
               {{ else }}
               value: "{{ .Values.sabnzbd.dataDir }}/sabnzbd.ini"
               {{ end }}
             - name: SABNZBD_UID
-              value: {{ .Values.sabnzbd.uid }}
+              value: {{ .Values.sabnzbd.uid | quote }}
             - name: SABNZBD_GID
-              value: {{ .Values.sabnzbd.uid }}
+              value: {{ .Values.sabnzbd.uid | quote }}
           ports:
             - name: http
               containerPort: 8080
