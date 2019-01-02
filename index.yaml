@@ -3,7 +3,7 @@ entries:
   kube-plex:
   - apiVersion: v1
     appVersion: 1.10.1.4602-f54242b6b
-    created: 2019-01-01T21:12:18.065454818-08:00
+    created: 2019-01-01T21:14:13.201733956-08:00
     description: Plex Media Server
     digest: bac668d821243ecb5f7b73ff0596b73c17b993703ff397c8696ab2a105f1b7c9
     home: https://plex.tv/
@@ -22,7 +22,7 @@ entries:
   sabnzbd:
   - apiVersion: v1
     appVersion: 2.3.5
-    created: 2019-01-01T21:12:18.06566244-08:00
+    created: 2019-01-01T21:14:13.201974161-08:00
     description: A Helm chart to deploy SABnzbd into k8s
     digest: 83f800650f1deb32789e3f6900224df2eaa28143a7f0e60b12a0a01830a73342
     icon: https://sabnzbd.org/images/logo-full.svg
@@ -39,11 +39,11 @@ entries:
   sonarr:
   - apiVersion: v1
     appVersion: "170"
-    created: 2019-01-01T21:12:18.065883062-08:00
+    created: 2019-01-01T21:14:13.202187492-08:00
     description: Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
       It can monitor multiple RSS feeds for new episodes of your favorite shows and
       will grab, sort and rename them.
-    digest: afa97c98e3670b37bb57239ebfacbf840f15e1480ec8db8c6a69dea5160f5cfe
+    digest: 6cab5488afa828570de8b27bf1471aad3794f26806d5b9c4abf4a8b8a04f61e6
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-banner.png
     keywords:
     - seedbox
@@ -56,4 +56,4 @@ entries:
     urls:
     - sonarr-0.1.0.tgz
     version: 0.1.0
-generated: 2019-01-01T21:12:17.921236346-08:00
+generated: 2019-01-01T21:14:13.058021269-08:00
