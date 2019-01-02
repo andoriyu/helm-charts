@@ -49,11 +49,11 @@ spec:
             - name: http
               containerPort: 8080
               protocol: TCP
-        volumeMounts:
-          - name: data
-            mountPath: {{ .Values.sabnzbd.dataDir }}
-          - name: media
-            mountPath: {{ .Values.sabnzbd.mediaDir }}
+          volumeMounts:
+            - name: data
+              mountPath: {{ .Values.sabnzbd.dataDir }}
+            - name: media
+              mountPath: {{ .Values.sabnzbd.mediaDir }}
           livenessProbe:
             httpGet:
               {{ if .Values.sabnzbd.apiKey }}
